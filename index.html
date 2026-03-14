@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetín Central</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+
+    <header class="titulo-top">Cafetín Central</header>
+
+    <div class="index-contenedor"> 
+        <img src="images/favicon.png" alt="logo" class="icono">   
+        <h1> 🍔🎓 Cafetín Central ☕📚 </h1>
+
+        <div class="login-contenedor">
+            <h2> Iniciar Sesión </h2>
+            
+                <div class="eligir-rol">
+                    <label>Elige tu rol:</label>
+                    <select  id="rol">
+                        <option value="Cliente">👤 Cliente</option>
+                        <option value="Cajero">💳 Cajero</option>
+                        <option value="Gestión">🔑 Gestión</option>
+                    </select>
+     
+                </div>
+
+                <hr>
+            <form id="loginForm" class="login-form">
+
+                <div class="login-text">
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" required>  
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" required>
+                </div>
+                <hr>
+                <div id="mensaje-error" class="error"></div>
+                <br>
+                <button type="button" id="ingresar">Ingresar</button>
+            </form>
+        </div>
+    </div>
+    <hr>
+
+    <script src="js/login.js"></script>
+
+</body>
+</html>
